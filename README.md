@@ -1,0 +1,1 @@
+# This is the normal UI practice using html css javascript bootstrap 
