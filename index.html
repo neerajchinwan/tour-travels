@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tour And Travels</title>
+
+    <!-- bootstrap stylesheet cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- stylesheet link  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- date picker cdn  -->
+    <link href="./plugin/thedatepicker-master/dist/the-datepicker.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="site-header">
+            <nav>
+                <div class="site-header-left-section">
+                    <!-- <img src="" alt=""> -->
+                    <div class="fs-2 header-logo">LOGO</div>
+                    <ul>
+                        <li><a href="Javascript:void(0)">Home</a></li>
+                        <li><a href="Javascript:void(0)">About</a></li>
+                        <li><a href="Javascript:void(0)">Services</a></li>
+                        <li><a href="Javascript:void(0)">Blog</a></li>
+                        <li><a href="Javascript:void(0)">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="site-header-right-section">
+                    <button>Title</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="home-master-wrapper">
+        <!-- Hero section of the home page  -->
+        <div class="container-fluid hero-image-wrpper">
+            <div class="row">
+                <div class="col-12 hero-section">
+                    <div>
+                        <h1><span>Explore</span> The World</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error facilis voluptate magnam
+                            inventore autem dolor, iusto consequuntur reprehenderit eius quia!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking-section  -->
+        <div class="container booking-section">
+            <div class="row">
+                <!-- <div class="col-12 mt-3">
+                        <h2 class="text-center"><span class="highlighted-color-text">Book</span> Your Package</h2>
+                    </div> -->
+
+                <div class="col-12 mt-4 booking-switch-buttons">
+                    <button class="active-button" data-value="tour-booking-detail-wrapper"
+                        data-attribute="booking-detail-wrapper">Tour</button>
+                    <button data-value="hotel-booking-detail-wrapper"
+                        data-attribute="booking-detail-wrapper">Hotels</button>
+                </div>
+
+                <div class="col-12 mt-4 mb-5 tour-booking-detail-wrapper booking-detail-wrapper">
+                    <div class="">
+                        <label for="tourDestinationPlace">Your Destination</label>
+                        <select name="" id="tourDestinationPlace" class="d-block mt-2">
+                            <option value="" selected>Choose your Place</option>
+                            <option value="">Place One</option>
+                            <option value="">Place Two</option>
+                            <option value="">Place Three</option>
+                            <option value="">Place Four</option>
+                            <option value="">Place Five</option>
+                            <option value="">Place Six</option>
+                            <option value="">Place Seven</option>
+                            <option value="">Place Eight</option>
+                            <option value="">Place Nine</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <label for="tourStartDate">Start Date</label>
+                        <!-- <input type="date" name="" id="tourStartDate" class="d-block mt-2"> -->
+                        <input type="text" id="tourStartDate" class="block mt-2 custom-datepicker"
+                            placeholder="Start Date">
+                    </div>
+                    <div class="">
+                        <label for="tourEndDate">End Date</label>
+                        <input type="text" name="" id="tourEndDate" class="d-block mt-2 custom-datepicker"
+                            placeholder="End Date">
+                    </div>
+                    <div class="">
+                        <label for="tourNumberOfPassangers">Number of Passengers</label>
+                        <input type="text" name="" id="tourNumberOfPassangers" class="d-block mt-2"
+                            placeholder="Passengers">
+                    </div>
+                </div>
+
+                <div class="col-12 mt-4 mb-5 hotel-booking-detail-wrapper booking-detail-wrapper">
+                    <div class="">
+                        <label for="hotelName">Hotel Name</label>
+                        <select name="" id="hotelName" class="d-block mt-2">
+                            <option value="" selected>Choose your Hotel</option>
+                            <option value="">Hotel One</option>
+                            <option value="">Hotel Two</option>
+                            <option value="">Hotel Three</option>
+                            <option value="">Hotel Four</option>
+                            <option value="">Hotel Five</option>
+                            <option value="">Hotel Six</option>
+                            <option value="">Hotel Seven</option>
+                            <option value="">Hotel Eight</option>
+                            <option value="">Hotel Nine</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <label for="hotelStartDate">Start Date</label>
+                        <!-- <input type="date" name="" id="hotelStartDate" class="d-block mt-2"> -->
+                        <input type="text" id="hotelStartDate" class="block mt-2 custom-datepicker"
+                            placeholder="Start Date">
+                    </div>
+                    <div class="">
+                        <label for="hotelEndDate">End Date</label>
+                        <input type="text" name="" id="hotelEndDate" class="d-block mt-2 custom-datepicker"
+                            placeholder="End Date">
+                    </div>
+                    <div class="">
+                        <label for="hotelNumberOfPassengers">Number of Passengers</label>
+                        <input type="text" name="" id="hotelNumberOfPassengers" class="d-block mt-2"
+                            placeholder="Passengers">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Destination Section  -->
+        <div class="container-fluid top-destination-section">
+            <div class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mt-4">
+                            <h2 class="text-center"><span class="highlighted-color-text">Top</span> Destination</h2>
+                        </div>
+
+                        <div class="col-12 mt-3">
+                            <div class="top-destination-grid-layout">
+                                <div class="destination1 destination">
+                                    <div class="destination-place">Switzerland</div>
+                                </div>
+                                <div class="destination2 destination">
+                                    <div class="destination-place">Norway</div>
+                                </div>
+                                <div class="destination3 destination">
+                                    <div class="destination-place">Kerala</div>
+                                </div>
+                                <div class="destination4 destination">
+                                    <div class="destination-place">Italy</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Destinations for you -->
+        <div class="container destination-for-you">
+            <div class="row">
+                <div class="col-12 mt-4">
+                    <h2 class="text-center"><span class="highlighted-color-text">Destination</span> For You</h2>
+                </div>
+
+                <div class="col-12 mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-md-2 destination-list">
+                            <ul>
+                                <li class="active-button" data-attribute="destination-for-you-common"
+                                    data-value="desitnation-for-you-first">India</li>
+                                <li data-attribute="destination-for-you-common" data-value="desitnation-for-you-second">
+                                    Italy</li>
+                                <li data-attribute="destination-for-you-common" data-value="desitnation-for-you-third">
+                                    Australia</li>
+                                <li data-attribute="destination-for-you-common" data-value="desitnation-for-you-forth">
+                                    Switzerland</li>
+                                <li data-attribute="destination-for-you-common" data-value="desitnation-for-you-fifth">
+                                    Brazil</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="desitnation-for-you-first destination-for-you-common">
+                                <div class="row">
+                                    <div class="col-md-4 ">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/mount-everest.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Mount Everest</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/mount-everest.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Mount Everest</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/mount-everest.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Mount Everest</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col-md-4 ">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/mount-everest.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Mount Everest</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/mount-everest.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Mount Everest</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/mount-everest.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Mount Everest</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desitnation-for-you-second destination-for-you-common">
+                                <div class="row">
+                                    <div class="col-md-4 ">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/sahara.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Sahara Desert</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/sahara.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Sahara Desert</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/sahara.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Sahara Desert</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col-md-4 ">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/sahara.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Sahara Desert</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/sahara.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Sahara Desert</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/sahara.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Sahara Desert</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desitnation-for-you-third destination-for-you-common">
+                                <div class="row">
+                                    <div class="col-md-4 ">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/australia.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Jaipur</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/australia.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Jaipur</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/australia.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Jaipur</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col-md-4 ">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/australia.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Jaipur</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/australia.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Jaipur</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/australia.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Jaipur</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desitnation-for-you-forth destination-for-you-common">
+                                <div class="row">
+                                    <div class="col-md-4 ">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/canal.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Ladakh</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/canal.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Ladakh</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/canal.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Ladakh</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col-md-4 ">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/canal.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Ladakh</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/canal.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Ladakh</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/canal.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Ladakh</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desitnation-for-you-fifth destination-for-you-common">
+                                <div class="row">
+                                    <div class="col-md-4 ">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/brazil.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Venice</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/brazil.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Venice</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/brazil.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Venice</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col-md-4 ">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/brazil.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Venice</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/brazil.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Venice</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="ms-2 me-2 destination-for-you-place-container">
+                                            <img src="./assets/images/brazil.webp" alt="">
+                                            <div class="destination-for-you-places">
+                                                <span class="destination-for-you-place-name">Venice</span>
+                                                <span class="destination-for-you-place-price">$450</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- special offer merged section -->
+
+                        <div class="col-12 mt-5">
+                            <div class="special-offer-container mt-5">
+                                <div class="special-offer-part">
+                                    <div class="ps-5 pe-5">
+                                        <h3>Special Offer</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolorem
+                                            minima perferendis reprehenderit voluptatum quaerat soluta tempore excepturi
+                                            harum tenetur.</p>
+                                        <button>Read More</button>
+                                    </div>
+                                </div>
+                                <div class="newsletter-part">
+                                    <div class="ps-5 pe-5">
+                                        <h3>Newsletter</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, commodi.</p>
+                                        <button>Subscribe Today</button>
+                                    </div>
+                                </div>
+                                <div class="travel-tip-part">
+                                    <div class="ps-5 pe-5">
+                                        <h3>Travel Tip</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, porro?</p>
+                                        <button>Read More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- latest travel news  -->
+        <div class="container latest-travel-news-section mb-5">
+            <div class="row">
+                <div class="col-12 mt-2">
+                    <h2 class="text-center"><span class="highlighted-color-text">Latest</span> Blog News</h2>
+                </div>
+
+                <div class="col-12 mt-5">
+                    <div class="row">
+                        <div class="col-md-6 each-news-block mb-4">
+                            <img src="./assets/images/australia.webp" alt="">
+                            <div class="each-news-content">
+                                <div class="each-news-heading">
+                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
+                                </div>
+                                <div class="each-news-date-and-timing">
+                                    <span class="each-news-date">04-April-20123</span>
+                                    <span class="each-news-time-stamp">05:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 each-news-block mb-4">
+                            <img src="./assets/images/brazil.webp" alt="">
+                            <div class="each-news-content">
+                                <div class="each-news-heading">
+                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
+                                </div>
+                                <div class="each-news-date-and-timing">
+                                    <span class="each-news-date">04-April-20123</span>
+                                    <span class="each-news-time-stamp">05:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 each-news-block mb-4">
+                            <img src="./assets/images/canal.webp" alt="">
+                            <div class="each-news-content">
+                                <div class="each-news-heading">
+                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
+                                </div>
+                                <div class="each-news-date-and-timing">
+                                    <span class="each-news-date">04-April-20123</span>
+                                    <span class="each-news-time-stamp">05:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 each-news-block mb-4">
+                            <img src="./assets/images/italy.webp" alt="">
+                            <div class="each-news-content">
+                                <div class="each-news-heading">
+                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
+                                </div>
+                                <div class="each-news-date-and-timing">
+                                    <span class="each-news-date">04-April-20123</span>
+                                    <span class="each-news-time-stamp">05:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 each-news-block mb-4">
+                            <img src="./assets/images/kerala.webp" alt="">
+                            <div class="each-news-content">
+                                <div class="each-news-heading">
+                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
+                                </div>
+                                <div class="each-news-date-and-timing">
+                                    <span class="each-news-date">04-April-20123</span>
+                                    <span class="each-news-time-stamp">05:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 each-news-block mb-4">
+                            <img src="./assets/images/mount-everest.webp" alt="">
+                            <div class="each-news-content">
+                                <div class="each-news-heading">
+                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
+                                </div>
+                                <div class="each-news-date-and-timing">
+                                    <span class="each-news-date">04-April-20123</span>
+                                    <span class="each-news-time-stamp">05:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 each-news-block mb-4">
+                            <img src="./assets/images/norway.webp" alt="">
+                            <div class="each-news-content">
+                                <div class="each-news-heading">
+                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
+                                </div>
+                                <div class="each-news-date-and-timing">
+                                    <span class="each-news-date">04-April-20123</span>
+                                    <span class="each-news-time-stamp">05:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 each-news-block mb-4">
+                            <img src="./assets/images/sunset.webp" alt="">
+                            <div class="each-news-content">
+                                <div class="each-news-heading">
+                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
+                                </div>
+                                <div class="each-news-date-and-timing">
+                                    <span class="each-news-date">04-April-20123</span>
+                                    <span class="each-news-time-stamp">05:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 latest-travel-news-button mt-2">
+                            <button>View All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- partner section -->
+        <div class="container partner-section">
+            <div class="row">
+                <div class="col-12 mt-2">
+                    <h2 class="text-center"><span class="highlighted-color-text">Ours</span> Partners</h2>
+                </div>
+
+                <div class="col-12 mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="https://artechnity.co.in/artech/wp-content/uploads/2022/11/logo-removebg-preview.webp"
+                                alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="https://artechnity.co.in/artech/wp-content/uploads/2022/11/logo-removebg-preview.webp"
+                                alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="https://artechnity.co.in/artech/wp-content/uploads/2022/11/logo-removebg-preview.webp"
+                                alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="https://artechnity.co.in/artech/wp-content/uploads/2022/11/logo-removebg-preview.webp"
+                                alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="https://artechnity.co.in/artech/wp-content/uploads/2022/11/logo-removebg-preview.webp"
+                                alt="">
+                        </div>
+                        <div class="col-2">
+                            <img src="https://artechnity.co.in/artech/wp-content/uploads/2022/11/logo-removebg-preview.webp"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- newsletter section  -->
+        <div class="container-fluid mt-3 newsletter-section">
+            <div>
+                <div class="container pt-5 pb-5">
+                    <div class="row pt-3">
+                        <div class="col-1">
+                            <?xml version="1.0" standalone="no"?>
+                                <!DOCTYPE svg
+                                    PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt"
+                                        height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                                        preserveAspectRatio="xMidYMid meet" style="width:100%; height: min-content;">
+
+                                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                                            fill="#f9461d" stroke="none">
+                                            <path d="M121 4823 c-72 -37 -98 -123 -57 -185 41 -62 -134 -58 2303 -58 2515
+                                                0 2276 9 2369 -85 65 -64 86 -124 82 -226 l-3 -73 -483 -282 c-995 -581 -1457
+                                                -839 -1557 -874 -126 -43 -304 -43 -430 0 -111 38 -609 321 -1735 985 -151 89
+                                                -289 169 -307 179 -74 37 -183 6 -231 -67 l-27 -41 0 -1340 c0 -1483 -4 -1391
+                                                64 -1540 63 -140 181 -271 312 -349 148 -87 294 -110 676 -105 225 3 251 5
+                                                280 23 60 36 79 113 43 172 -37 61 -48 63 -368 63 -159 0 -314 5 -343 10 -196
+                                                37 -362 202 -399 395 -8 43 -10 404 -8 1271 l3 1212 85 -50 c373 -221 946
+                                                -556 1250 -730 612 -350 669 -373 925 -372 244 1 293 20 775 291 760 428 1690
+                                                976 1714 1009 18 24 21 47 24 149 4 142 -13 240 -58 332 -60 122 -185 230
+                                                -319 276 l-66 22 -2240 3 c-2120 2 -2242 1 -2274 -15z" />
+                                            <path d="M4876 3489 c-59 -46 -56 9 -56 -1048 0 -670 -3 -986 -11 -1023 -35
+                                                -166 -155 -303 -324 -369 -58 -22 -74 -23 -397 -29 l-336 -5 -26 -24 c-76 -72
+                                                -49 -193 50 -220 49 -14 485 -14 610 -1 180 19 321 82 447 200 109 102 185
+                                                228 224 373 15 56 17 161 21 1052 2 688 0 1001 -8 1027 -16 55 -61 88 -119 88
+                                                -34 0 -56 -6 -75 -21z" />
+                                            <path d="M2475 2014 c-241 -37 -392 -108 -535 -254 -340 -347 -311 -969 59
+                                                -1277 73 -60 232 -142 326 -167 96 -25 220 -35 320 -25 227 21 322 72 333 177
+                                                4 46 2 53 -31 88 -33 36 -39 39 -89 38 -29 0 -90 -13 -136 -27 -260 -84 -566
+                                                41 -690 281 -54 103 -73 183 -73 302 0 355 253 610 605 610 228 0 436 -129
+                                                534 -330 56 -115 72 -183 72 -311 0 -100 -2 -109 -25 -138 -34 -40 -86 -57
+                                                -126 -41 -53 23 -59 48 -59 270 0 225 -7 256 -62 290 -27 16 -44 19 -98 14
+                                                -51 -4 -78 -1 -124 15 -144 51 -304 7 -415 -115 -72 -78 -95 -144 -96 -269 0
+                                                -88 3 -107 26 -155 94 -199 334 -292 529 -204 l58 26 42 -40 c69 -68 120 -87
+                                                230 -87 82 0 103 4 152 27 80 37 152 107 191 187 32 66 32 66 32 221 -1 169
+                                                -12 232 -66 363 -59 143 -185 298 -314 387 -69 47 -181 97 -270 120 -78 20
+                                                -240 33 -300 24z m170 -746 c75 -59 71 -190 -7 -238 -42 -26 -113 -26 -154 -1
+                                                -79 48 -84 180 -9 239 39 31 131 31 170 0z" />
+                                        </g>
+                                </svg>
+                        </div>
+                        <div class="col-5">
+                            <h6>Get the latest news and offers</h6>
+                            <h4>Subscribe to our <span class="highlighted-text">Newsletter</span></h4>
+                        </div>
+                        <div class="col-6 newsletter-form text-end">
+                            <input type="text" name="" id="" placeholder="Email Address">
+                            <button>Subscribe Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid footer-section pt-3 pb-5">
+            <div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 footer-image text-center">
+                            <img src="https://artechnity.co.in/artech/wp-content/uploads/2022/11/logo-removebg-preview.webp" alt="">
+                        </div>
+                        <div class="col-md-3 footer-about-company footer-each-section">
+                            <h6 class="">Social Media Links</h6>
+
+                            <ul class="footer-social-media-wrapper">
+                                <li><a href="Javascript:void(0)"><img src="./assets/images/facebook.png" alt=""></a></li>
+                                <li><a href="Javascript:void(0)"><img src="./assets/images/instagram.png" alt=""></a></li>
+                                <li><a href="Javascript:void(0)"><img src="./assets/images/linkedin.png" alt=""></a></li>
+                                <li><a href="Javascript:void(0)"><img src="./assets/images/youtube.png" alt=""></a></li>
+                                <li><a href="Javascript:void(0)"><img src="./assets/images/twitter.png" alt=""></a></li>
+                            </ul>
+
+                            <h6 class="mt-3">Accepted Cards</h6>
+                            <img src="./assets/images/cards.png" alt="">
+                        </div>
+                        <div class="col-md-3 footer-each-section">
+                            <h6>Menu</h6>
+                            <ul>
+                                <li><a href="Javascript:void(0)">Lorem.</a></li>
+                                <li><a href="Javascript:void(0)">Quas?</a></li>
+                                <li><a href="Javascript:void(0)">Dignissimos?</a></li>
+                                <li><a href="Javascript:void(0)">Cum.</a></li>
+                                <li><a href="Javascript:void(0)">Debitis?</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 footer-each-section">
+                            <h6>Terms & Policy</h6>
+                            <ul>
+                                <li><a href="Javascript:void(0)">Lorem.</a></li>
+                                <li><a href="Javascript:void(0)">Maxime!</a></li>
+                                <li><a href="Javascript:void(0)">Repellendus.</a></li>
+                                <li><a href="Javascript:void(0)">Atque.</a></li>
+                                <li><a href="Javascript:void(0)">Sint?</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 footer-each-section">
+                            <h6>About Company</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat error nihil sed perferendis optio non amet, consequuntur fugiat autem porro?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- bootstrap js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery cdn  -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+    <script src="./plugin/thedatepicker-master/dist/the-datepicker.js"></script>
+
+    <!-- custom javascript link  -->
+    <script src="./assets/javascript/script.js"></script>
+
+</body>
+
+</html>
